@@ -29,6 +29,8 @@ public class PlayerController : PhysicsCollision
             velocity.x = 0;
 
         rb.velocity = velocity;
+
+        animator.SetBool("IsGrounded", isGrounded);
     }
 
     public void SetAxis(float x)
